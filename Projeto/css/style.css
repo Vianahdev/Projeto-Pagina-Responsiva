@@ -16,15 +16,14 @@
     clear: both;
 }
 
-nav.menu-desktop li.selected{
-    
+nav.menu-desktop li.selected{ 
     font-weight:normal;
 }
 
 /*Classes do Site*/
 
 header{
-    padding: 8px 0;
+    padding: 20px 0;
 }
 
 .logo{
@@ -113,7 +112,7 @@ section.main-bg .container a{
 
 section.main-bg .container a:hover{
     cursor: pointer; 
-    transition: 0.1s;
+    transition: 0.5s;
     background-color: white;
     color: #4ba6b8;
 }
@@ -150,12 +149,12 @@ section.diferencias{
 }
 
 .icone-diferencias{
-    margin-top: 35px;
+    margin-top: 40px;
     text-align: center;
 }
 
 .box-icone-single{
-    padding-top: 55px;
+    padding-top: 45px;
     float: left;
     width: 33.3%;
 }
@@ -166,7 +165,106 @@ section.diferencias{
 }
 
 .box-icone-single p{
+    text-align: left;
     padding: 10px 25px 55px 25px;
     font-weight: lighter;
     font-size: 17px;
 }
+
+
+/*sessão sobre-equipe*/
+
+section.sobre-equipe{
+    padding: 30px 0;
+    background: rgb(225, 225, 225);
+}
+
+section.sobre-equipe > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area-equipe{
+    width: 50%;
+}
+
+.area-sobre{
+    width: 50%;
+}
+
+.area-sobre h2{
+    margin-bottom: 30px;
+}
+
+.area-sobre p{
+    margin-top: 15px;
+    font-size: 15px;
+    color:black;
+}
+
+.img-avatar{
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    margin-top: 15px;
+}
+
+.avatar-box{
+    margin-top: 20px;
+}
+
+.descricao-avatar{
+    width: calc(100% - 250px);
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+.descricao-avatar h3{
+    color: rgb(30, 30, 30);
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+section.sobre-equipe .container .area-equipe a{
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    background-color: #4ba6b8;
+    text-decoration: none;
+}
+
+
+section.sobre-equipe .container .area-equipe a:hover{
+    cursor: pointer; 
+    transition: 0.5s;
+    background-color: white;
+    color: #4ba6b8;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .box-icone-single{
+        width: 100%;
+    }
+
+    .area-equipe,.area-sobre{
+        width: 100%;
+    }
+
+}
+
