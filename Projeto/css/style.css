@@ -64,6 +64,7 @@ nav.menu-desktop a:hover{
 /*sessão Main*/
 
 section.main-bg{
+    position: relative;
     width: 100%;
     padding: 140px 0 200px 0;
     background: url(../images/pexels-mantas-hesthaven-326916.jpg) no-repeat center;
@@ -71,9 +72,24 @@ section.main-bg{
     text-align: center;
 }
 
+section.main-bg > .container{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
 section.main-bg .container h2{
     color: #4ba6b8;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: normal;
 }
 
@@ -94,11 +110,63 @@ section.main-bg .container a{
     text-decoration: none;
 }
 
+
 section.main-bg .container a:hover{
     cursor: pointer; 
     transition: 0.1s;
     background-color: white;
     color: #4ba6b8;
-    
-   
+}
+
+/*Sassaão direfencias*/
+
+section.diferencias{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.line-text{
+    display: inline-block;
+    position: relative;
+    color: #4ba6b8;
+}
+
+.line-text > div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 3px;
+    background: #4ba6b8;
+}
+
+.line-text h2{
+    font-weight: normal;
+    font-size:27px;
+}
+
+.clear{
+    clear: both;
+}
+
+.icone-diferencias{
+    margin-top: 35px;
+    text-align: center;
+}
+
+.box-icone-single{
+    padding-top: 55px;
+    float: left;
+    width: 33.3%;
+}
+
+.box-icone-single h2{
+    color: #8a6b62;
+    font-size: 75px;
+}
+
+.box-icone-single p{
+    padding: 10px 25px 55px 25px;
+    font-weight: lighter;
+    font-size: 17px;
 }
