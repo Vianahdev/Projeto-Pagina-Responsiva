@@ -66,7 +66,7 @@ section.main-bg{
     position: relative;
     width: 100%;
     padding: 140px 0 200px 0;
-    background: url(../images/pexels-mantas-hesthaven-326916.jpg) no-repeat center;
+    background: url(../images/img1.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
 }
@@ -204,6 +204,7 @@ section.sobre-equipe > .container{
     color:black;
 }
 
+
 .img-avatar{
     display: inline-block;
     width: 85px;
@@ -281,7 +282,6 @@ section.inscrever > .container{
 .w50 input[type=email]{
     border-radius: 7px;
     outline: 0;
-    margin-top: 4px;
     width: 79%;
     padding: 8px;
     font-size: 13px;
@@ -313,42 +313,71 @@ sessao titulo-cartao
 */
 section.titulo-cartao{
     padding: 30px 0;
-     background: white;
+    background: white;
+ }
+
+ .card-sigle{
+     width: 33.3%;
+     float: left;
+     padding: 50px;
+     
+ }
+
+ .card-sigle img{
+     width: 100%;
+     border-radius: 10px;
+ }
+
+ .card-sigle h4{
+     margin-top: 5px;
+     font-weight: normal;
+     font-size: 19px;
+ }
+
+ .card-sigle p{
+     margin: 10px 0;
+     font-weight: lighter;
+     font-size: 16px;
+     padding-bottom: 20px;
+     border-bottom: 2px solid #CCC;
  }
  
- section.titulo-cartao > .container{
-     display: flex;
-     flex-wrap: wrap;
-  }
-
-  .w35{
-      width: 33.33%;
-      padding-left: 50px;
-  }
-
-  .w35 img{
-      width: 300px;
-  }
-
-  .w35 h4{
-      text-align: left;
-  }
-
-  .w35 p{
-    font-size: 15px;
-    text-align: left;
-}
-
-.linha{
-    border-bottom: 1px solid #CCC;
-    padding-top: 8px;
-}
 
 /*
 Sessao Rodape
 */
 
-section.rodape
+footer.area-rodape{
+    padding: 30px 0;
+    background: #4ba6b8;
+}
+
+.w33{
+    width: 33.33%;
+    float: left;
+}
+
+.w33 h2{
+    color: white;
+    font-weight: normal;
+    font: 22px;
+}
+
+.w33 p{
+    color: white;
+    font-weight: lighter;
+    font: 18px;
+}
+
+.w33 a{
+    text-decoration: none;
+}
+
+.w33 a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
 
 
 
@@ -356,6 +385,10 @@ section.rodape
 
 /*Ajuste de tela*/
 @media screen and (max-width:768px){
+    .card-sigle{
+        width: 100%;
+    }
+
     .box-icone-single{
         width: 100%;
     }
@@ -370,7 +403,7 @@ section.rodape
     }
 
     .w50{
-        margin-top: 5px;
+        margin-top: 8px;
         width: 100%;
     }
 
@@ -378,6 +411,12 @@ section.rodape
         margin-bottom: 15px;
         width: 100%;
         padding-left: 75px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .card-sigle{
+        padding: 10px;
     }
 }
 
