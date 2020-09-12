@@ -355,18 +355,40 @@ footer.area-rodape{
 .w33{
     width: 33.33%;
     float: left;
+    padding-left: 50px;
+    
 }
 
 .w33 h2{
     color: white;
     font-weight: normal;
-    font: 22px;
+    font: 22px; 
+    padding-bottom: 10px;
+}
+
+.group-icons h3{
+    font-weight: normal;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.group-icons a{
+    color: white;
+}
+
+.group-icons a h3 i:hover{
+    color: #417680;
+}   
+
+.w33 i{
+    margin-right: 10px;
 }
 
 .w33 p{
     color: white;
     font-weight: lighter;
     font: 18px;
+    padding-bottom: 5px;
 }
 
 .w33 a{
@@ -379,21 +401,30 @@ footer.area-rodape{
 }
 
 
+/*
+Sessao Rodape inferior
+*/
 
+footer.area-rodape-inf{
+    padding: 10px 0;
+    background: #417680;;
+}
+
+.direitos{
+    text-align: center;
+    color: white;
+}
+
+.direitos h3{
+    font-weight: lighter;
+    font: 18px;
+}
 
 
 
 /*Ajuste de tela*/
 @media screen and (max-width:768px){
-    .card-sigle{
-        width: 100%;
-    }
-
-    .box-icone-single{
-        width: 100%;
-    }
-
-    .area-equipe{
+    .card-sigle,.box-icone-single,.area-equipe{
         width: 100%;
     }
 
@@ -412,10 +443,22 @@ footer.area-rodape{
         width: 100%;
         padding-left: 75px;
     }
+
+    .w33{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:500px){
+    footer.area-rodape{
+        text-align: center;
+    }
+
     .card-sigle{
+        padding: 10px;
+    }
+
+    .w33{
         padding: 10px;
     }
 }
