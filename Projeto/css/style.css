@@ -20,6 +20,11 @@ nav.menu-desktop li.selected{
     font-weight:normal;
 }
 
+/***************************************
+************ Pagina Home **************
+***************************************/
+
+
 /*Classes do Site*/
 
 header{
@@ -44,6 +49,42 @@ nav.menu-desktop ul{
     position: relative;
     top: 8px;
 }
+
+nav.menu-mobile{
+    display: none;
+    float: right;
+
+}
+
+nav.menu-mobile h2{
+    cursor: pointer;
+}
+
+nav.menu-mobile ul{
+    display: none;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 73px;
+    z-index: 999;
+    text-align: center;
+}
+
+nav.menu-mobile li{
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(184, 182, 182, 0.658);
+}
+
+nav.menu-mobile li.selected{
+    background: rgb(225, 225, 225);
+}
+
+nav.menu-mobile a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}    
 
 nav.menu-desktop li{
     display: inline-block;
@@ -420,9 +461,153 @@ footer.area-rodape-inf{
     font: 18px;
 }
 
+/***************************************
+************ Pagina Sobre **************
+***************************************/
+
+/*Sessao tirulo Sobre*/
+
+section.title-page{
+    position: relative;
+    padding: 30px;
+    width: 100%;
+    min-height: 150px;
+    background: url('../images/img1.jpg') no-repeat;
+    background-size: cover;
+}
+
+section.title-page > .container{
+    position: relative;
+    z-index: 4;
+}
+
+.title-page h2{
+   color: #4ba6b8;
+   font-weight: normal;
+   font-size: 35px;
+}
+
+.title-page p{
+    margin-top: 15px;
+    color: white;
+    font-weight: lighter;
+    font: 16px;
+ }
+
+.overlay__title-page{
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+ }
+
+ /*Sessao Sobre noticia*/
+
+ section.sobre__noticia{
+     padding: 30px 0;
+     background: white;
+ }
+
+ .sobre__sigle__noticia img{
+     max-width: 100%;
+     float: left;
+     width: 45%;
+
+ }
+
+ .sobre__sigle__noticia p{
+    width: 55%;
+    float: left;
+    font-weight: lighter;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+
+ }
+
+ .paragrafo__sigle__noticia{
+    margin-top: 15px;
+ }
+
+ .paragrafo__sigle__noticia p{
+    width: 100%;
+    font-weight: lighter;
+    font-size: 15px;
+    
+ }
+
+ /*Sessao Parallax*/
+
+ section.parallax{
+     position: relative;
+     padding: 30px 0;
+     background-image: url(../images/img04.jpg);
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+     width: 100%;
+     min-height: 200px;
+     text-align: center;
+     z-index: 50;
+ }
+
+ section.parallax > .container{
+    position: relative;
+    z-index: 51;
+}
+
+.parallax h2{
+    color: #4ba6b8;
+    font-weight: normal;
+    font-size: 30px;
+    border: 1px solid #4ba6b8;
+    padding: 3px 50px;
+    display: inline-block;
+}
+
+ .parallax p{
+     padding-top: 15px;
+     color:white;
+     font-weight: lighter;
+     font-size: 15px;
+ }
+
+ /*Sessao Equipe*/
+
+ section.sobre__equipe{
+     padding: 30px 0;
+     color: white;
+ }
+
+ section.sobre__equipe > .container{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .avatar__box{
+     width: 33.33%;
+ }
+ 
 
 
-/*Ajuste de tela*/
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************
+************ Ajustes Resposivel **************
+**********************************************/
+
 @media screen and (max-width:768px){
     .card-sigle,.box-icone-single,.area-equipe{
         width: 100%;
@@ -449,7 +634,23 @@ footer.area-rodape-inf{
     }
 }
 
+@media screen and (max-width:1024px){
+    .sobre__sigle__noticia img,.sobre__sigle__noticia p{
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+
 @media screen and (max-width:500px){
+    nav.menu-desktop{
+        display: none;
+    }
+
+    nav.menu-mobile{
+        display: block;
+    }
+
     footer.area-rodape{
         text-align: center;
     }
@@ -460,6 +661,11 @@ footer.area-rodape-inf{
 
     .w33{
         padding: 10px;
+    }
+
+    .sobre__sigle__noticia img,.sobre__sigle__noticia p{
+        padding-left: 0;
+        width: 100%;
     }
 }
 
