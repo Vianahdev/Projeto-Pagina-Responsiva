@@ -36,8 +36,13 @@ header{
 }
 
 .logo h2{
+    color: black;
     font-weight: normal;
     font-size: 23px;
+}
+
+.logo a{
+    text-decoration: none;
 }
 
 /*Classes do Menu*/
@@ -609,8 +614,9 @@ section.title-page > .container{
 
 .img__avatar{
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
     border-radius: 50%;
     background-size: 100% 100%;
     margin-bottom: 20px;
@@ -721,6 +727,7 @@ section.area__contato{
 .contato h4{
     padding: 8px;
     font-weight: normal;
+  
 }
 
 .telefone h4{
@@ -739,6 +746,7 @@ section.area__contato{
 }
 
 .email-contato h4{
+    border-left: 8px solid #CCC;
     background-color:rgb(225, 225, 225);
     padding: 8px;
     text-align: center;
