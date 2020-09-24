@@ -29,6 +29,10 @@ nav.menu-desktop li.selected{
 
 header{
     padding: 20px 0;
+    background-color: white; 
+    position: sticky;
+    top: 0px;
+    z-index: 999;
 }
 
 .logo{
@@ -44,6 +48,7 @@ header{
 .logo a{
     text-decoration: none;
 }
+
 
 /*Classes do Menu*/
 nav.menu-desktop{
@@ -709,7 +714,7 @@ section.title__page > .container{
 /*sessao Contato*/
 
 section.area__contato{
-    padding: 30px 0;
+    padding: 44.5px 0;
     background: white;
 }
 
@@ -925,5 +930,3 @@ section.area__contato{
     }
 
 }
-
-
