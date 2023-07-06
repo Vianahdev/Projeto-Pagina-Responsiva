@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Project Responsive é uma página Web feita como forma de agregar conhecimento.
 
-- [Acesse o projeto finalizado, online](https://Vianahdev.github.io/Projeto-Dev-Links)
+- [Acesse o projeto finalizado, online](https://Vianahdev.github.io/Projeto-Pagina-Responsiva/)
 
 ## 🔖 Layout
 
